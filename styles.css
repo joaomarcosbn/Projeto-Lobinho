@@ -1,3 +1,7 @@
+* {
+  font-family: "Darker Grotesque", sans-serif;
+}
+
 header{
     position: absolute;
     height: 100px;
@@ -11,7 +15,6 @@ header{
 
 .imglobinho {
     width: 80px;
-    height: 80px;
 }
 
 .container {
