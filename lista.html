@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="PS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleslista.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Darker+Grotesque:wght@300..900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
+ rel="stylesheet">
+
+    <link rel="shortcut icon" href="Imagens/logo.png" type="image/x-icon">
+    <title>Lista de Lobinhos</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .search-bar {
+            margin-bottom: 20px;
+        }
+        .results {
+            margin-top: 20px;
+        }
+        .result-item {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <section>
+            <table border="0" width="100%" align="center">
+                <tr class="cabeçalho">
+                    <td align="center"><h2>Pagina Inicial</h2></td>
+                    <td align="center"><img src="Imagens/Iconlobo.jpeg" alt="" class="imglobinho"></td>
+                    <td align="center"><a href="quemsomos.html" style="color: black;"><h3>Quem Somos</h3></a></td>
+                </tr>
+            </table>
+
+        </section>
+        
+        
+    </header>
+
+    <input type="text" id="searchInput" placeholder="Digite sua busca">
+    <button id="searchButton">Buscar</button>
+    <label><input type="checkbox" id="adoptedFilter"> Ver lobinhos adotados</label>
+    <div id="results"></div>
+
+    <script src="script.js"></script>
+
+    
+    <footer>
+        <div class="divfooter1">
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7350.634708816445!2d-43.1350473888855!3d-22.901662615406806!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9983d3888876fd%3A0xce46b06cbadf4686!2sUFF%20-%20Bloco%20G%20(Instituto%20de%20Matem%C3%A1tica%20e%20Estat%C3%ADstica)!5e0!3m2!1spt-BR!2sbr!4v1722203930120!5m2!1spt-BR!2sbr"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+    
+            <div class="infos">
+                <div>
+                    <div class="dados">
+                        <img src="imagens/loc.png" alt="" width="18" height="auto">
+                        <span>Milton Tavares de Souza, s/n - Sala 115 B - Boa Viagem, Niterói - RJ, 24210-315</span>
+                    </div>
+                        
+                    <div class="dados">
+                        <img src="imagens/telefone.png" alt="" width="18" height="auto">
+                        <span>(99) 99999-9999</span>
+                    </div>
+
+                    <div class="dados">
+                        <img src="imagens/envelope.png" alt="" width="18" height="auto">
+                        <span>salve-lobos@lobINhos.com</span>
+                    </div>
+                </div>
+
+                <a href="contato.html"><button class="quemsomos">Quem Somos</button></a>
+
+            </div>
+        </div>
+
+        <div class="divfooter2">
+            <p>Desenvolvido com</p>
+            <img src="imagens/paw.png" alt="pata">
+        </div>
+        
+    </footer>
+</body>

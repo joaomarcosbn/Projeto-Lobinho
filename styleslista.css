@@ -1,0 +1,134 @@
+* {
+    font-family: "Darker Grotesque", sans-serif;
+    overflow: auto;
+  }
+  body{
+    margin: 0px;
+  }
+  header{
+      height: 100px;
+      width: 100%;
+      left: 0%;
+      right: 0%;
+      top: 0%;
+      bottom: 0%;
+      background-color: #85CDF5;
+  }
+  
+  .imglobinho {
+      display: flex;
+      width: 80px;
+      justify-content: center;
+  }
+  
+  .container {
+      text-align: center; 
+      position: center;
+    }
+    
+  .imglobo {
+      width: 100%;
+      height: 2px;
+    }
+
+    footer {
+        width: 100%;
+        height: 275px;
+        background-color: #333333;
+        color: white;
+        border-top-width: 5px;
+        border-top-style: solid;
+        border-image: linear-gradient(to left, #2C5680, #DEB959) 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15vw;
+        position: absolute;
+        margin-top: 38%
+      }
+      
+      .mapa {
+        width: 300px;
+        height: 200px; 
+        overflow: hidden; 
+        position: relative;
+      }
+      
+      .divfooter1 {
+        display: flex;
+        gap: 50px;
+      }
+      
+      .quemsomos {
+        background-color: #DEB959;
+        color: #353535;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+      
+      .infos {
+        line-height: 50px;
+      }
+      .dados img {
+        padding-right: 5px;
+      }
+      .foto{
+        width: 100%;
+        height: auto;
+      }
+      .cabeçalho{
+        display: flex;
+        justify-content: center;
+        gap: 20%;
+      }
+      .meio{
+        background-color: #2C5680;
+        display: flex;
+        justify-content: center;
+        height: 250px;
+      }
+      .sobre{
+        position: absolute;
+        color: #DEB959;
+        text-align: center;
+      }
+      .textao{
+        position: absolute;
+        padding-top: 5vh;
+        color: #FFFFFF;
+        text-align: center;
+      }
+      .valores{
+        color: #DEB959;
+        position: relative;
+        text-align: center;
+      }
+      .meio2{
+        position: absolute;
+        background-color: #333333;
+        width: 100%;
+      }
+      .valoresphotos{
+        position: relative;
+        width: 40%;
+        height: auto;
+        left: 20%;
+        margin-left: 2%;
+        margin-right: 2%;
+      }
+      .meio2 h3{
+        text-align: center;
+        align-items: center;
+        color: #FFFFFF;
+        margin-right: 15%;
+      }
+      .valores2{
+        display: flex;
+      }
+      .valores2 p{
+        color: #FFFFFF;
+        text-align: center;
+        margin-right: 15%;
+      }
+      
