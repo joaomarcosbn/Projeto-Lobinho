@@ -19,11 +19,12 @@ header{
     position: center;
   }
   
-img {
+.imglobo {
     width: 100%;
+    height: 2px;
   }
   
-.titulo {
+  .titulo {
     position: absolute;
     top: 25%;
     left: 50%;
@@ -35,14 +36,69 @@ img {
   }
 
 
-p {
+.texto {
     position: absolute;
     font-size: 18px;
     font-weight: bold;
     color: #FFFFFF;
     align-items: center;
     left: 700px;
-    top: 180px;
+    top: 40%;
     text-decoration-color: #FFFFFF;
 }
 
+.linha {
+    position: absolute;
+    width: 100px;
+    height: 5px;
+    top: 35%;
+    left: 50%;
+    background-color: #FFFFFF;
+
+}
+
+footer {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  /* top: 80%; */
+  bottom: 0%;
+  height: 275px;
+  background-color: #333333;
+  color: white;
+  border-top-width: 5px;
+  border-top-style: solid;
+  border-image: linear-gradient(to left, #2C5680, #DEB959) 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15vw;
+}
+
+.mapa {
+  width: 300px;
+  height: 200px; 
+  overflow: hidden; 
+  position: relative;
+}
+
+.divfooter1 {
+  display: flex;
+  gap: 50px;
+}
+
+.quemsomos {
+  background-color: #DEB959;
+  color: #353535;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.infos {
+  line-height: 50px;
+}
+
+.dados img {
+  padding-right: 5px;
+}
