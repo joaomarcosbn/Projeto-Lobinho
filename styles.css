@@ -45,8 +45,8 @@ header{
     font-weight: bold;
     color: #FFFFFF;
     align-items: center;
-    left: 700px;
     top: 40%;
+    left: 25%;
     text-decoration-color: #FFFFFF;
 }
 
@@ -104,4 +104,8 @@ footer {
 
 .dados img {
   padding-right: 5px;
+}
+.foto{
+  width: 100%;
+  height: auto;
 }
