@@ -1,5 +1,6 @@
 * {
   font-family: "Darker Grotesque", sans-serif;
+  overflow: auto;
 }
 
 header{
@@ -14,7 +15,9 @@ header{
 }
 
 .imglobinho {
+    display: flex;
     width: 80px;
+    justify-content: center;
 }
 
 .container {
@@ -25,18 +28,18 @@ header{
 .imglobo {
     width: 100%;
     height: 2px;
-}
+  }
   
-.titulo {
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-family: sans-serif;
-  font-size: 4rem;
-  font-weight: bold;
-}
+  .titulo {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+  }
 
 
 .texto {
@@ -46,7 +49,7 @@ header{
     color: #FFFFFF;
     align-items: center;
     top: 40%;
-    left: 35%;
+    left: 25%;
     text-decoration-color: #FFFFFF;
 }
 
@@ -54,40 +57,17 @@ header{
     position: absolute;
     width: 100px;
     height: 5px;
-    top: 35%;
-    left: 48%;
+    top: 38%;
+    left: 46%;
     background-color: #FFFFFF;
 
 }
 
-.sobre {
-  text-align: center; 
-  position: center;
-  width: 100%;
-  height: 333px;
-  left: 0px;
-  right: 0%;
-  background-color:#2C5680;
-
-}
-
-.titulosobre {
-  text-align: center; 
-  position: center;
-
-
-  transform: translate(-50%, -50%);
-  color:#DEB959;
-  font-family: sans-serif;
-  font-size: 2rem;
-  font-weight: bold;
-}
-
 footer {
-  
+  position: absolute;
   left: 0%;
   right: 0%;
-  /* top: 80%; */
+  top: 80%;
   bottom: 0%;
   height: 275px;
   background-color: #333333;
@@ -99,6 +79,7 @@ footer {
   align-items: center;
   justify-content: center;
   gap: 15vw;
+  margin-top: 10%;
 }
 
 .mapa {
@@ -124,11 +105,32 @@ footer {
 .infos {
   line-height: 50px;
 }
-
 .dados img {
   padding-right: 5px;
 }
 .foto{
   width: 100%;
   height: auto;
+}
+.cabeçalho{
+  display: flex;
+  justify-content: center;
+  gap: 20%;
+}
+.meio{
+  background-color: #2C5680;
+  display: flex;
+  justify-content: center;
+  height: 250px;
+}
+.sobre{
+  position: absolute;
+  color: #DEB959;
+  left: 48%;
+}
+.textao{
+  position: absolute;
+  top: 37em;
+  color: #FFFFFF;
+  justify-content: center;
 }
