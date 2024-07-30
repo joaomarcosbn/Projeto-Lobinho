@@ -6,70 +6,41 @@ body {
 /* ----- HEADER ----- */
 
 header {
-    background-color: #85CDF5;
-    padding: 10px 0;
-    height: 10vh;
+  background-color: #85CDF5;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center
+  
 }
 
-.header-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin: auto;
+.link_header {
+  text-decoration: none;
+  color: #333333;
+  font-family: 'Darker Grotesque';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+  display: inline-block;
+  position: relative;
 }
 
-nav ul {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    padding: 0;
-    margin: auto;
-    width: 100%;
-    max-width: 1200px;
-    justify-content: space-between;
-    gap: 18vw;
+.link_header::after {
+  content: '';
+  position: absolute;
+  width: 60%;
+  transform: scaleX(0);
+  height: 4px;
+  bottom: -10px;
+  right: 0;
+  background-color: #333333;
+  transform-origin: bottom left;
+  transition: transform 0.25s ease-out;
 }
 
-nav ul li {
-    margin: 0 20px;
-}
-
-nav ul li.logo {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    flex-grow: 1;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #333333;
-    position: relative;
-}
-
-nav ul li a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    display: block;
-    margin-top: 5px;
-    right: 0;
-    background: #333333;
-    transition: width 0.4s ease;
-    -webkit-transition: width 0.4s ease;
-}
-
-nav ul li a:hover::after {
-    width: 100%;
-    left: 0;
-    background: #333333;
-}
-
-.logo img {
-    width: 50px;
-    height: auto;
+.link_header:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom right;
 }
 
 /* ----- PARTE DO LOBO ----- */
