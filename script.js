@@ -2,10 +2,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const searchInput = document.getElementById('searchInput');
     const resultsDiv = document.getElementById('results');
 
-    //Constantes para a navegação de páginas
-    const pagination = document.querySelector('.pagination');
-    const pageItems = pagination.querySelectorAll('.page-item');
-    const currentPage = 3; // Página inicial
 
     fetch('lobinhos.json')
         .then(response => response.json())
@@ -52,20 +48,5 @@ document.addEventListener('DOMContentLoaded', function () {
             resultsDiv.appendChild(resultItem);
         });
     }
-    // Função para atualizar a visualização das páginas
-    function updatePagination(newPage) {
-    pageItems.forEach(item => {
-      item.classList.remove('active');
-    });
-    pageItems[newPage].classList.add('active');
-  }
-  
-  // Eventos de clique nos botões
-  pagination.addEventListener('click', (event) => {
-    if (event.target.tagName === 'BUTTON') {
-      const newPage = parseInt(event.target.textContent);
-      // Lógica para carregar o conteúdo da nova página
-      // ...
-      updatePagination(newPage);
-    }
-})});
+ 
+});

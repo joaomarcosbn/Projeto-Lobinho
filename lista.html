@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styleslista.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Darker+Grotesque:wght@300..900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
- rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Darker+Grotesque:wght@300..900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 
     <link rel="shortcut icon" href="Imagens/logo.png" type="image/x-icon">
     <title>Lista de Lobinhos</title>
@@ -53,17 +53,24 @@
 
     <script src="script.js"></script>
 
-    <ul class="pagination">
-        <li class="page-item"><button><<</button></li>
-        <li class="page-item"><button>1</button></li>
-        <li class="page-item"><button>2</button></li>
-        <li class="page-item active"><button>3</button></li>
-        <li class="page-item"><button>4</button></li>
-        <li class="page-item"><button>5</button></li>
-        <li class="page-item"><button>>></button></li>   
-      
-      </ul>
-
+    <nav class="">
+        <ul class="pagination justify-content-center">
+            <li class="page-item"><a class="page-link" href="#" aria-label="Anterior">
+                <span aria-hidden="true">&laquo;</span>
+                <span class="sr-only">Anterior</span>
+              </a></li>
+            <li class="page-item"></li><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Próximo">
+                  <span aria-hidden="true">&raquo;</span>
+                  <span class="sr-only">Próximo</span>
+                </a>
+            </li> 
+        
+        </ul>
+    </nav>
     
     <footer>
         <div class="divfooter1">
