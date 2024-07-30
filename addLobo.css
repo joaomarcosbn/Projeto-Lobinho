@@ -197,6 +197,8 @@ footer {
     align-items: center;
     justify-content: center;
     gap: 15vw;
+    bottom: 0;
+    position: fixed;
   }
 
 .mapa {
