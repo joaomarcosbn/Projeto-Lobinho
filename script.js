@@ -2,6 +2,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const searchInput = document.getElementById('searchInput');
     const resultsDiv = document.getElementById('results');
 
+    //Constantes para a navegação de páginas
+    const pagination = document.querySelector('.pagination');
+    const pageItems = pagination.querySelectorAll('.page-item');
+    const currentPage = 3; // Página inicial
+
     fetch('lobinhos.json')
         .then(response => response.json())
         .then(data => {
@@ -28,14 +33,39 @@ document.addEventListener('DOMContentLoaded', function () {
             resultItem.classList.add('result-item');
             resultItem.innerHTML = `
                 <div>
-                    <img src="${item.imagem}" alt="${item.nome}">
-                    <h2>${item.nome}</h2>
-                    <p>${item.descricao}</p>
-                    <p><strong>Idade:</strong> ${item.idade}</p>
-                    ${item.adotado ? `<p><strong>Nome do Dono:</strong> ${item.nomeDono}</p><p><strong>Idade do Dono:</strong> ${item.idadeDono}</p><p><strong>Email do Dono:</strong> ${item.emailDono}</p>` : '<p>Não adotado</p>'}
+                    <table>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Descrição</th>
+                            <th>Idade</th>
+                            <th>Imagem</th>
+                        </tr>
+                        <tr>
+                            <td>${item.nome}</td>
+                            <td>${item.descricao}</td>
+                            <td>${item.idade}</td>
+                            <td><img src="${item.imagem}" alt="${item.nome}"></td>
+                        </tr>
+                    </table>
                 </div>
             `;
             resultsDiv.appendChild(resultItem);
         });
     }
-});
+    // Função para atualizar a visualização das páginas
+    function updatePagination(newPage) {
+    pageItems.forEach(item => {
+      item.classList.remove('active');
+    });
+    pageItems[newPage].classList.add('active');
+  }
+  
+  // Eventos de clique nos botões
+  pagination.addEventListener('click', (event) => {
+    if (event.target.tagName === 'BUTTON') {
+      const newPage = parseInt(event.target.textContent);
+      // Lógica para carregar o conteúdo da nova página
+      // ...
+      updatePagination(newPage);
+    }
+})});

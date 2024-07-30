@@ -31,6 +31,20 @@
       height: 2px;
     }
 
+    .pagination {
+        display: flex;
+        list-style: none;
+        padding: 0;
+      }
+      
+      .page-item {
+        margin: 0 5px;
+      }
+      
+      .page-item.active button {
+        background-color: #4CAF50;
+      }
+
     footer {
         width: 100%;
         height: 275px;
