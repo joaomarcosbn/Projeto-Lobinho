@@ -1,0 +1,177 @@
+* {
+    font-family: "Darker Grotesque", sans-serif;
+}
+
+/* ----- HEADER ----- */
+
+header {
+    background-color: #85CDF5;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center
+}
+
+.link_header {
+    text-decoration: none;
+    color: #333333;
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    display: inline-block;
+    position: relative;
+}
+
+.link_header::after {
+    content: '';
+    position: absolute;
+    width: 60%;
+    transform: scaleX(0);
+    height: 4px;
+    bottom: -10px;
+    right: 0;
+    background-color: #333333;
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
+}
+
+.link_header:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom right;
+}
+
+/* ----- MEIO ----- */
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section h1 {
+    margin: 8vh;
+    font-size: 7vh;
+    font-weight: 700
+}
+
+.lobosimg {
+    position: relative;
+    margin-right: 1vw;
+}
+
+.lobo {
+    position: relative; /* Ensure it has a positioning context */
+    z-index: 2; /* Higher z-index to appear above .detalhelobo */
+
+}
+
+.detalhelobo {
+    position: absolute; /* Position it relative to the nearest positioned ancestor */
+    left: -30px; /* Adjust this value to move it to the left */
+    top: -30px; /* Adjust this value to move it up */
+    z-index: 1; /* Lower z-index to appear behind .lobo */
+}
+
+.lobos {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+}
+
+.lobos p {
+    width: 30%;
+    font-size: 3vh;
+    white-space: pre-wrap;
+}
+
+.lobosimg img {
+    width: 540px;
+    height: 336px;
+}
+
+.lobos div {
+    margin-top: 2vh;
+}
+.lobos div a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5vw;
+    background: #7AAC3A;
+    font-weight: 500;
+    padding: 1vw 3vw 1vw 3vw;
+
+}
+
+.lobos div button {
+    color: white;
+    font-size: 1.5vw;
+    background: #DE5959;
+    font-weight: 500;
+    border: none;
+    padding: 1vw 3vw 1vw 3vw;
+}
+
+.butoes {
+    display: flex;
+    justify-content: space-around;
+}
+
+.lobosimg img {
+    width: 30vw;
+}
+
+
+.lobo {
+    position: relative; /* Ensure it has a positioning context */
+    z-index: 2; /* Higher z-index to appear above .detalhelobo */
+    height: 50vh
+}
+
+/* ----- FOOTER ----- */
+
+footer {
+    width: 100%;
+    height: 275px;
+    background-color: #333333;
+    color: white;
+    border-top-width: 5px;
+    border-top-style: solid;
+    border-image: linear-gradient(to left, #2C5680, #DEB959) 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15vw;
+    bottom: 0;
+}
+
+.mapa {
+    width: 300px;
+    height: 200px; 
+    overflow: hidden; 
+    position: relative;
+}
+
+.divfooter1 {
+    display: flex;
+    gap: 50px;
+    line-height: 50px;
+}
+
+footer button {
+    font-size: medium;
+    font-weight: 600;
+    background-color: #DEB959;
+    color: #353535;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+footer button:hover {
+    background-color: #fdc22e;
+    transition: 0.3s;
+}
