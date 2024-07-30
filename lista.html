@@ -53,24 +53,10 @@
 
     <script src="script.js"></script>
 
-    <nav class="">
-        <ul class="pagination justify-content-center">
-            <li class="page-item"><a class="page-link" href="#" aria-label="Anterior">
-                <span aria-hidden="true">&laquo;</span>
-                <span class="sr-only">Anterior</span>
-              </a></li>
-            <li class="page-item"></li><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item">
-                <a class="page-link" href="#" aria-label="Próximo">
-                  <span aria-hidden="true">&raquo;</span>
-                  <span class="sr-only">Próximo</span>
-                </a>
-            </li> 
-        
-        </ul>
-    </nav>
+    <div id="pagination">
+        <button id="prev" onclick="prevPage()">Anterior</button>
+        <button id="next" onclick="nextPage()">Próximo</button>
+    </div>
     
     <footer>
         <div class="divfooter1">

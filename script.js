@@ -50,3 +50,40 @@ document.addEventListener('DOMContentLoaded', function () {
     }
  
 });
+
+let currentPage = 1;
+const itemsPerPage = 4;
+const itemsContainer = document.getElementById('items-container');
+const items = itemsContainer.getElementsByClassName('item');
+const totalItems = items.length;
+const totalPages = Math.ceil(totalItems / itemsPerPage);
+
+function showPage(page) {
+    if (page < 1) page = 1;
+    if (page > totalPages) page = totalPages;
+    
+    for (let i = 0; i < totalItems; i++) {
+        items[i].style.display = 'none';
+    }
+
+    for (let i = (page - 1) * itemsPerPage; i < page * itemsPerPage && i < totalItems; i++) {
+        items[i].style.display = 'block';
+    }
+
+    currentPage = page;
+}
+
+function prevPage() {
+    if (currentPage > 1) {
+        showPage(currentPage - 1);
+    }
+}
+
+function nextPage() {
+    if (currentPage < totalPages) {
+        showPage(currentPage + 1);
+    }
+}
+
+// Inicializa a exibição da primeira página
+showPage(currentPage);
