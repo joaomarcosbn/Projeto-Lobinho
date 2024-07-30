@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    font-family: "Darker Grotesque", sans-serif;
+}
+/* ----- HEADER ----- */
+
+header {
+    background-color: #85CDF5;
+    padding: 10px 0;
+    height: 10vh;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: auto;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: space-between;
+    gap: 18vw;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li.logo {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333333;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #333333;
+    transition: width 0.4s ease;
+    -webkit-transition: width 0.4s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+    left: 0;
+    background: #333333;
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+}
+.Somos{
+    position: relative;
+    text-align: center;
+    font-size: larger;
+    margin-top: 3%;
+}
+.Somos p{
+    position: relative;
+    margin-top: 5%;
+}
+/* ----- FOOTER ----- */
+
+footer {
+    width: 100%;
+    height: 275px;
+    background-color: #333333;
+    color: white;
+    border-top-width: 5px;
+    border-top-style: solid;
+    border-image: linear-gradient(to left, #2C5680, #DEB959) 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15vw;
+    bottom: 0%;
+    position: fixed;
+  }
+
+.mapa {
+width: 300px;
+height: 200px; 
+overflow: hidden; 
+position: relative;
+}
+
+.divfooter1 {
+display: flex;
+gap: 50px;
+line-height: 50px;
+}
+
+footer button {
+font-size: medium;
+font-weight: 600;
+background-color: #DEB959;
+color: #353535;
+border: none;
+padding: 10px 20px;
+cursor: pointer;
+transition: 0.3s;
+}
+
+footer button:hover {
+background-color: #fdc22e;
+transition: 0.3s;
+}
