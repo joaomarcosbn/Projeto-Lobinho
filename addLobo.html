@@ -54,6 +54,38 @@
         </section>
     </main>
 
+    <!--Add o script js para salvar as modificações no arquivo json-->
+
+    <script>
+        async function salvarLobinho() {
+            const nome = document.getElementById('nome_lobo').value;
+            const idade = document.getElementById('idade_lobo').value;
+            const link = document.getElementById('link_lobo').value;
+            const descricao = document.getElementById('descricao_lobo').value;
+    
+            const lobinho = {
+                nome: nome,
+                idade: idade,
+                link: link,
+                descricao: descricao
+            };
+    
+            const response = await fetch('/adicionar-lobinho', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(lobinho)
+            });
+    
+            if (response.ok) {
+                alert('Lobinho salvo com sucesso!');
+            } else {
+                alert('Erro ao salvar lobinho.');
+            }
+        }
+    </script>
+
     <!-- FOOTER -->
     <footer>
         <div class="divfooter1">
