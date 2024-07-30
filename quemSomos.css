@@ -1,85 +1,70 @@
-body {
-    margin: 0;
-    font-family: "Darker Grotesque", sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;700&display=swap');
+
 /* ----- HEADER ----- */
 
 header {
     background-color: #85CDF5;
-    padding: 10px 0;
-    height: 10vh;
-}
-
-.header-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin: auto;
+    justify-content: space-evenly;
+    align-items: center
+    
 }
 
-nav ul {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    padding: 0;
-    margin: auto;
-    width: 100%;
-    max-width: 1200px;
-    justify-content: space-between;
-    gap: 18vw;
-}
-
-nav ul li {
-    margin: 0 20px;
-}
-
-nav ul li.logo {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    flex-grow: 1;
-}
-
-nav ul li a {
+.link_header {
     text-decoration: none;
     color: #333333;
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    display: inline-block;
     position: relative;
 }
 
-nav ul li a::after {
+.link_header::after {
     content: '';
     position: absolute;
-    width: 0;
-    height: 2px;
-    display: block;
-    margin-top: 5px;
+    width: 60%;
+    transform: scaleX(0);
+    height: 4px;
+    bottom: -10px;
     right: 0;
-    background: #333333;
-    transition: width 0.4s ease;
-    -webkit-transition: width 0.4s ease;
+    background-color: #333333;
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
 }
 
-nav ul li a:hover::after {
-    width: 100%;
-    left: 0;
-    background: #333333;
+.link_header:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom right;
 }
 
-.logo img {
-    width: 50px;
-    height: auto;
+/* ----- MEIO ----- */
+
+section{
+    font-family: 'Darker Grotesque';
+    margin: 2rem;
+    margin-left: 15%;
+    margin-right: 15%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
-.Somos{
-    position: relative;
+
+h1{
+    font: revert;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.textoQuemSomos{
     text-align: center;
-    font-size: larger;
-    margin-top: 3%;
+    line-height: 1.5rem;
+    font-size: 1.5rem;
+    padding: 1rem;
 }
-.Somos p{
-    position: relative;
-    margin-top: 5%;
-}
+
 /* ----- FOOTER ----- */
 
 footer {
@@ -94,35 +79,34 @@ footer {
     align-items: center;
     justify-content: center;
     gap: 15vw;
-    bottom: 0%;
-    position: fixed;
+    bottom: 0;
   }
 
 .mapa {
-width: 300px;
-height: 200px; 
-overflow: hidden; 
-position: relative;
+    width: 300px;
+    height: 200px; 
+    overflow: hidden; 
+    position: relative;
 }
 
 .divfooter1 {
-display: flex;
-gap: 50px;
-line-height: 50px;
+    display: flex;
+    gap: 50px;
+    line-height: 50px;
 }
 
 footer button {
-font-size: medium;
-font-weight: 600;
-background-color: #DEB959;
-color: #353535;
-border: none;
-padding: 10px 20px;
-cursor: pointer;
-transition: 0.3s;
+    font-size: medium;
+    font-weight: 600;
+    background-color: #DEB959;
+    color: #353535;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 footer button:hover {
-background-color: #fdc22e;
-transition: 0.3s;
+    background-color: #fdc22e;
+    transition: 0.3s;
 }
