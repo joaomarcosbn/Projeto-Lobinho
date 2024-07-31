@@ -95,16 +95,6 @@ header {
     font-weight: 400;
     font-size: 30px;
 }
-.section1 a{
-    transition: all 0.5s;
-    cursor: pointer;
-}
-.section1 a:hover{
-    -webkit-transform: scale(1.5);
-    transform: scale(1.5);
-    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
-    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
-}
 
 /* ----- SOBRE -----  */
 
@@ -135,60 +125,26 @@ header {
 
 /* ----- VALORES ----- */
 
-.meio2 {
+.section3 {
     font-family: 'Darker Grotesque';
     display: flex;
     flex-direction: column;
     background-color: #333333;
     justify-content: center;
     align-items: center;
-    padding-bottom: 5%;
-} .valores{
-    color: #DEB959;
-    position: relative;
-    text-align: center;
-    font-size: 300%;
-    margin-top: 3%;
-  }
-  .meio2{
-    position: absolute;
-    background-color: #333333;
-    width: 100%;
-  }
-  .valoresphotos{
-    position: relative;
-    width: 40%;
-    height: auto;
-    left: 20%;
-    margin-left: 2%;
-    margin-right: 2%;
-  }
-  .meio2 h3{
-    text-align: center;
-    align-items: center;
-    color: #FFFFFF;
-    margin-right: 15%;
-    font-size: 150%;
-    font-weight: 900;
-    margin-top: 5%;
-    margin-bottom: 5%;
-  }
-  .valores2{
-    display: flex;
-  }
-  .valores2 p{
-    color: #FFFFFF;
-    text-align: center;
-    margin-right: 15%;
-    font-size: 150%;
-  }
+    padding: 4vh;
+}
+
+.section3Titulo {
+    margin-bottom: 2vh;
+}
 
 /* ----- LOBOS EXEMPLO -----  */
 
 .section4 {
     background-color: white;
     text-align: center;
-    margin-top: 70vh;
+    margin-top: 7vh;
     
 
 }
